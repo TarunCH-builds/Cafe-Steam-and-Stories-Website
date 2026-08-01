@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam & Stories - Brewed with Love, Served with a Smile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-header">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Steam & Stories</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#ambiance">Ambiance</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="sign-in-btn" onclick="openModal('login')">Sign In</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">☕</div>
+            <h1>Welcome to Steam & Stories</h1>
+            <p class="hero-tagline">"Brewed with Love, Served with a Smile"</p>
+            <input type="text" class="search-box" placeholder="🔍 Search...">
+            <button class="reservation-btn" onclick="openModal('booking')">Make a Reservation</button>
+            <button class="view-location-btn">View all Locations</button>
+        </div>
+    </section>
+
+    <div class="scroll-icons">
+        <span>🍕</span>
+        <span>☕</span>
+        <span>🍰</span>
+        <span>🍹</span>
+    </div>
+
+    <section id="ambiance" class="story-section">
+        <p class="story-text">Step into an atmosphere where warmth meets elegance and every aroma tells a story. At Steam & Stories, we bring together flavours from around the world - from classic coffee and handcrafted beverages to mouth-watering dishes inspired by global cuisines.</p>
+        <p class="since-badge">Since 2025</p>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="section-title">🍽️ Signature Dishes</h2>
+        <p class="section-subtitle">"Every dish tells a story - crafted with love, served with passion."</p>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400') center/cover;"></div>
+                <h3>Crispy Chips</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹235</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400') center/cover;"></div>
+                <h3>Sandwich</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹180</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400') center/cover;"></div>
+                <h3>Pizza</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹450</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400') center/cover;"></div>
+                <h3>Burger</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹280</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">☕ Our Coffee's</h2>
+        <p class="section-subtitle">"Each cup whispers warmth, each sip speaks joy."</p>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400') center/cover;"></div>
+                <h3>Cold Coffee</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="volume">Volume 160ml</p>
+                <div class="item-footer">
+                    <span class="price">₹60</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1534778101976-62847782c213?w=400') center/cover;"></div>
+                <h3>Caffe Latte</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="volume">Volume 160ml</p>
+                <div class="item-footer">
+                    <span class="price">₹200</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400') center/cover;"></div>
+                <h3>Cappuccino</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="volume">Volume 160ml</p>
+                <div class="item-footer">
+                    <span class="price">₹100</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400') center/cover;"></div>
+                <h3>Cortado</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p class="volume">Volume 160ml</p>
+                <div class="item-footer">
+                    <span class="price">₹210</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="section-title">Desserts & Sweet Stories</h2>
+        <p class="section-subtitle">"Your story deserves a sweet plot twist"</p>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400') center/cover;"></div>
+                <h3>Chocolate Cake</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹220</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=400') center/cover;"></div>
+                <h3>Cupcake</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹85</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400') center/cover;"></div>
+                <h3>Tiramisu</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹250</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400') center/cover;"></div>
+                <h3>Ice Cream</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹120</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2 class="section-title">Drinks & Beverages</h2>
+        <p class="section-subtitle">"From the first sip to the last swirl"</p>
+        <div class="menu-container">
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400') center/cover;"></div>
+                <h3>Fresh Juice</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹120</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400') center/cover;"></div>
+                <h3>Smoothie</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹150</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1556881286-fc6915169721?w=400') center/cover;"></div>
+                <h3>Iced Tea</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹100</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item-image" style="background: url('https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400') center/cover;"></div>
+                <h3>Milkshake</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <div class="item-footer">
+                    <span class="price">₹180</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="chef-section">
+        <h2 class="section-title">🧑‍🍳 Our Chefs</h2>
+        <p class="section-subtitle">"Our chefs don't just cook - they create moments of joy on every plate."</p>
+        <div class="chef-container">
+            <div class="chef-card">
+                <div class="chef-layout">
+                    <div class="chef-img"></div>
+                    <div class="chef-info">
+                        <h3>Chef Marco Rossi</h3>
+                        <p>With 15 years of culinary excellence, Chef Marco brings authentic Italian flavors and innovative techniques to every dish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chef-card">
+                <div class="chef-layout">
+                    <div class="chef-img"></div>
+                    <div class="chef-info">
+                        <h3>Chef Priya Sharma</h3>
+                        <p>A master of fusion cuisine, Chef Priya combines traditional spices with modern techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-section">
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-subtitle">"What our guest says"</p>
+        <div class="menu-container">
+            <div class="review-item">
+                <div class="customer-icon"></div>
+                <div class="stars">★★★★★</div>
+                <p>"The ambiance is absolutely magical! The coffee is exceptional."</p>
+                <p><strong>- Sarah M.</strong></p>
+            </div>
+            <div class="review-item">
+                <div class="customer-icon"></div>
+                <div class="stars">★★★★</div>
+                <p>"Best cafe in town! The desserts are to die for."</p>
+                <p><strong>- Rajesh K.</strong></p>
+            </div>
+            <div class="review-item">
+                <div class="customer-icon"></div>
+                <div class="stars">★★★★★</div>
+                <p>"A perfect blend of great food, coffee, and atmosphere."</p>
+                <p><strong>- Emily T.</strong></p>
+            </div>
+            <div class="review-item">
+                <div class="customer-icon"></div>
+                <div class="stars">★★★★★</div>
+                <p>"The cappuccino here is art in a cup!"</p>
+                <p><strong>- Amit P.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-section">
+        <h2 class="section-title">☕ Steam and Stories</h2>
+        <p class="section-subtitle">"Reserve your experience"</p>
+        <button class="reservation-btn" onclick="openModal('booking')">Book Now</button>
+        <div class="booking-info">
+            <h3>Opening Hours</h3>
+            <p>Mon - Fri: 8AM - 11PM</p>
+            <p>Sat - Sunday: 9AM - 12AM</p>
+            <h3>Location</h3>
+            <p>123 Coffee Lane, Downtown District</p>
+            <h3>Contact</h3>
+            <p>+91 98765 43210</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Visit Us</h2>
+        <div class="contact-info">
+            <h3>Location</h3>
+            <p>📍 123 Coffee Lane, Downtown District, Mumbai</p>
+            <h3>Contact</h3>
+            <p>📞 +91 98765 43210</p>
+            <p>✉️ hello@steamandstories.com</p>
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 8:00 AM - 11:00 PM</p>
+            <p>Saturday - Sunday: 9:00 AM - 12:00 AM</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Steam & Stories</h4>
+                <div class="social-links">
+                    <p>📘 Facebook</p>
+                    <p>📷 Instagram</p>
+                    <p>▶️ YouTube</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Website</h4>
+                <p>www.steamandstories.com</p>
+                <h4>Social Media</h4>
+                <p>📷 Instagram: @steamandstories</p>
+                <p>✉️ hello@steamandstories.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>123 Coffee Lane</p>
+                <p>Downtown District, Mumbai</p>
+                <h4>Timing</h4>
+                <p>Mon - Fri: 8AM - 11PM</p>
+                <p>Sat - Sunday: 9AM - 12AM</p>
+            </div>
+        </div>
+        <p style="margin-top: 2rem; color: #d4af37;">© 2025 Copyright Steam & Stories Cafe. All rights reserved.</p>
+        <button class="sign-in-btn" onclick="openModal('login')" style="margin-top: 1rem;">Sign In</button>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('login')">&times;</span>
+            <h2>Sign In</h2>
+            <input type="email" placeholder="Email Address">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+            <p style="margin-top: 1rem; text-align: center;">Don't have an account? <a href="#" style="color: #d4af37;">Sign Up</a></p>
+        </div>
+    </div>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('booking')">&times;</span>
+            <h2>Book Your Table</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email Address">
+            <input type="tel" placeholder="Phone Number">
+            <input type="date">
+            <input type="time">
+            <input type="number" placeholder="Number of Guests" min="1">
+            <button>Confirm Booking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
